@@ -1,0 +1,23 @@
+{
+  "name": "ai-gateway-js",
+  "version": "0.1.0",
+  "description": "Lightweight multi-provider LLM routing for Node.js — OpenAI, Anthropic, and Google with priority routing, automatic fallback, cost tracking, and latency optimization. Zero dependencies.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "examples"],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "llm", "ai", "openai", "anthropic", "claude", "gemini", "google",
+    "gateway", "router", "fallback", "multi-provider", "cost-optimization"
+  ],
+  "author": "Jerome W. Dewald <jerome@aistrategiesnyc.com>",
+  "license": "MIT",
+  "engines": { "node": ">=18.0.0" },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
